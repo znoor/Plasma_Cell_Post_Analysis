@@ -30,14 +30,14 @@ library(gridExtra)
 
 #### Libraries
 
-lib_plasma_pp <- read.csv(".../Plasma_Library_PP.csv")
-lib_plasma_tpp <- read.csv(".../Plasma_Library_TPP.csv")
+lib_plasma_pp <- read.csv(".../Plasma_Library_PP.csv", stringsAsFactors = F)
+lib_plasma_tpp <- read.csv(".../Plasma_Library_TPP.csv", stringsAsFactors = F)
 
-lib_cell_pp <- read.csv(".../Cell_Calibrated_Library_PP.csv")
-lib_cell_tpp <- read.csv(".../Cell_Calibrated_Library_TPP.csv")
+lib_cell_pp <- read.csv(".../Cell_Calibrated_Library_PP.csv", stringsAsFactors = F)
+lib_cell_tpp <- read.csv(".../Cell_Calibrated_Library_TPP.csv", stringsAsFactors = F)
 
-lib_plasma_cell_pp <- read.csv(".../Plasma_Cell_Library_PP.csv")
-lib_plasma_cell_tpp <- read.csv(".../Plasma_Cell_Library_TPP.csv")
+lib_plasma_cell_pp <- read.csv(".../Plasma_Cell_Library_PP.csv", stringsAsFactors = F)
+lib_plasma_cell_tpp <- read.csv(".../Plasma_Cell_Library_TPP.csv", stringsAsFactors = F)
 
 
 lib_plasma_pp <- lib_plasma_pp[!duplicated(lib_plasma_pp$ModificationSequence),]
@@ -858,14 +858,14 @@ dev.off()
 ##### Number of identified proteins and peptides in each of the libraries
 
 
-lib_plasma_pp <- read.csv(".../Plasma_Library_PP.csv")
-lib_plasma_tpp <- read.csv(".../Plasma_Library_TPP.csv")
+lib_plasma_pp <- read.csv(".../Plasma_Library_PP.csv", stringsAsFactors = F)
+lib_plasma_tpp <- read.csv(".../Plasma_Library_TPP.csv", stringsAsFactors = F)
 
-lib_cell_pp <- read.csv(".../Cell_Calibrated_Library_PP.csv")
-lib_cell_tpp <- read.csv(".../Cell_Calibrated_Library_TPP.csv")
+lib_cell_pp <- read.csv(".../Cell_Calibrated_Library_PP.csv", stringsAsFactors = F)
+lib_cell_tpp <- read.csv(".../Cell_Calibrated_Library_TPP.csv", stringsAsFactors = F)
 
-lib_plasma_cell_pp <- read.csv(".../Plasma_Cell_Library_PP.csv")
-lib_plasma_cell_tpp <- read.csv(".../Plasma_Cell_Library_TPP.csv")
+lib_plasma_cell_pp <- read.csv(".../Plasma_Cell_Library_PP.csv", stringsAsFactors = F)
+lib_plasma_cell_tpp <- read.csv(".../Plasma_Cell_Library_TPP.csv", stringsAsFactors = F)
 
 
 plasma_lib_PP_prot <- lib_plasma_pp[!duplicated(lib_plasma_pp$ProteinName),"UniprotID"]
